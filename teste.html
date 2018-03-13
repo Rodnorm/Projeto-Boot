@@ -14,7 +14,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <body>
 	<div class="navbar-wraper">
-	<nav class="navbar navbar-inverse navbar-static-top">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -48,12 +48,34 @@
         </nav>
 	</div>
 	<!--------------------------------------------------------------------------------------------------------------------->
-	<div class="carousel-slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target ="#myCarousel1" data-slide-to ="0" class="active"></li>
-			<li data-target ="#myCarousel2" data-slide-to ="1" ></li>
-			<li data-target ="#myCarousel3" data-slide-to ="2" ></li>			
-		</ol>
+	
+	
+	<style>
+		.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        line-height: 1;
+        margin:auto;
+		width:100%;
+        }
+		#about{
+			padding: 80px 120px;
+		}.person{
+			    border: 10px solid transparent;
+    		margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+			
+		}.person:hover{
+			border-color: #f1f1f1;
+			opacity: 1.0;
+		}
+	</style>
+	
+	
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -63,7 +85,7 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item">
-          <img class="first-slide" src="g1.jpg" alt="First slide">
+          <img class="first-slide" src="img/kitty.jpeg" alt="First slide"><!--gatinho-->
           <div class="container">
             <div class="carousel-caption">
               <h1>Example headline.</h1>
@@ -73,7 +95,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="g2.jpg" alt="Second slide">
+          <img class="second-slide" src="img/tigers.jpeg" alt="Second slide"><!--tigres-->
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
@@ -83,7 +105,7 @@
           </div>
         </div>
         <div class="item active">
-          <img class="third-slide" src="g3.jpg" alt="Third slide">
+          <img class="third-slide" src="img/pass.jpeg" alt="Third slide"><!--passarinho-->
           <div class="container">
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
@@ -101,6 +123,33 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div>
+    </div><!--carousel-->
+	<div id="about" class="container text-center">
+		<h1>About us</h1>
+		<p><em>who we are</em></p>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</p>
+		<br>
+		<div class="row">
+			<br>
+			<div class="col-sm-4">
+				<p class="text-center">Fulaninha</p>
+				<br>
+				<img src="img/who.jpeg" class="img-circle person" width="255" height="255">			
+			</div>	
+			<div class="col-sm-4">
+				<p class="text-center">Fulaninha</p>
+				<br>
+				<img src="img/who1.jpeg" class="img-circle person" width="255" height="255">			
+			</div>	
+			<div class="col-sm-4">
+				<p class="text-center">Fulaninha</p>
+				<br>
+				<img src="img/who2.jpeg" class="img-circle person" width="255" height="255">			
+			</div>	
+		</div>
+	
+	</div>	
 </body>
 </html>

@@ -23,7 +23,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Project name</a>
+              <a class="navbar-brand" href="#">Site X</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
@@ -52,25 +52,25 @@
 	
 	<style>
 		.carousel-inner>.item>img, .carousel-inner>.item>a>img {
-        display: block;
-        height: auto;
-        max-width: 100%;
-        line-height: 1;
-        margin:auto;
-		width:100%;
+        		display: block;
+        		height: auto;
+        		max-width: 100%;
+        		line-height: 1;
+        		margin:auto;
+				width:100%;
         }
 		#about{
 			padding: 80px 120px;
 		}.person{
-			    border: 10px solid transparent;
-    		margin-bottom: 25px;
-    width: 80%;
-    height: 80%;
-    opacity: 0.7;
+				border: 10px solid transparent;
+    			margin-bottom: 25px;
+   				width: 80%;
+    			height: 80%;
+    			opacity: 0.7;
 			
 		}.person:hover{
-			border-color: #f1f1f1;
-			opacity: 1.0;
+				border-color: #f1f1f1;
+				opacity: 1.0;
 		}
 	</style>
 	
@@ -136,20 +136,69 @@
 			<div class="col-sm-4">
 				<p class="text-center">Fulaninha</p>
 				<br>
-				<img src="img/who.jpeg" class="img-circle person" width="255" height="255">			
+				<a href="#cont1" data-toggle="collapse"><img src="img/who.jpeg" class="img-circle person" width="255" height="255"></a>
+				<div id="cont1" class="collapse">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>	
+				</div>		
 			</div>	
 			<div class="col-sm-4">
 				<p class="text-center">Fulaninha</p>
 				<br>
-				<img src="img/who1.jpeg" class="img-circle person" width="255" height="255">			
+				<a href="#cont2" data-toggle="collapse">
+				<img src="img/who1.jpeg" class="img-circle person" width="255" height="255">
+				</a>
+				<div id="cont2" class="collapse">
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>			
+				</div>
 			</div>	
 			<div class="col-sm-4">
 				<p class="text-center">Fulaninha</p>
 				<br>
+				<a href="#cont3" data-toggle="collapse">
 				<img src="img/who2.jpeg" class="img-circle person" width="255" height="255">			
+				</a>
+				<div id="cont3" class="collapse">
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+				</div>
 			</div>	
 		</div>
+	</div>
+	<div class="container text-center">
+			<h2>Contato</h2>
+			<p><em>Fale com a gente!</em></p>
+	</div>
+	<div id="contact" class="contact-section">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="inputName">Nome</label>
+							<input type="text" class="form-control" id="inputName" placeholder="insira seu nome">				
+						</div>
+						<div class="form-group">
+							<label for="inputEmail">Email</label>
+							<input type="email" class="form-control" id="inputEmail" placeholder="insira seu email">
+						</div>
+						<div class="form-group">
+							<label for="yText">Sua mensagem</label>
+							<textarea class="form-control" placeholder="sua mensagem..."></textarea>
+						</div>
+						<button type="submit" class="btn btn-default">Enviar</button>
+						<hr>
+					</form>
+				</div>			
+			</div>
+		</div>
+	</div>
 	
-	</div>	
+	
 </body>
 </html>

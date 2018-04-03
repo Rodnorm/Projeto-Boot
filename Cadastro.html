@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cadastro</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+	<style>
+		body{
+    background-color: #525252;
+}
+.centered-form{
+	margin-top: 60px;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+		}figure{
+			border: medium solid black;
+			float: right;
+		}
+	</style>
+
+<body>
+	<!-- -->
+	
+	<div class="container">
+      <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4 col-lg-offset-2 col-lg-9">
+        	<div class="panel panel-default">
+        		<div class="panel-heading">
+			    		<h3 class="panel-title">Cadastro de Imóveis</h3>
+			 			</div>
+			 			<div class="panel-body">
+			    		<form role="form">
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+										<label for="data">Data</label>
+			                			<input type="text" name="data" id="data" class="form-control input-sm" placeholder="DD/MM/AA">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+										<label for="proprietario">Proprietário</label>
+			    						<input type="text" name="proprietário" id="proprietario" class="form-control input-sm" placeholder="Proprietário">
+			    					</div>
+			    				</div>
+			    			</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="col-sm-6">
+											  <div class="form-group">
+												  <label for="categoria">Categoria</label>
+												<select id="categoria" name="categoria" class="form-control">
+												  <option value="1">Residencial</option>
+												  <option value="2">Comercial</option>
+												  <option value="3">Rural</option>
+												</select>
+												</div>
+									</div>
+									<div class="col-sm-6">
+									<div class="form-group">	
+												<label for="tipo_imovel">Tipo do Imóvel</label>
+													<select id="tipo_imovel" name="tipo_imovel" class="form-control">
+													  <option value="1">Apartamento</option>
+													  <option value="2">Casa</option>
+													  <option value="3">Terreno</option>
+													</select>
+									</div>	
+									</div>
+								<label for="CPF">CPF</label>
+			    				<input type="text" name="CPF" id="CPF" class="form-control" placeholder="CPF">
+								<br>
+								<button type="button" class="btn btn-info">Buscar</button>
+									</div>
+								
+								<div class="col-sm-6">
+									<figure>
+										<img src="casa1.jpeg" alt="Exemplo de casa" class="img-responsive">
+									</figure>
+								</div>
+								<hr>
+							<div class="panel-group">
+								<h2 class="panel-title">Dependências</h2>
+							</div>
+									<div class="col-xs-6 col-sm-6 col-md-6">
+											<div class="form-group">
+												<label for="Quartos">Quartos</label>
+												<input type="text" name="Quartos" id="Quartos" class="form-control input-sm" placeholder="Quartos">
+											</div>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6">
+											<div class="form-group">
+												<label for="Banheiros">Banheiros</label>
+												<input type="text" name="Banheiros" id="Banheiros" class="form-control input-sm" placeholder="Banheiros">
+											</div>
+									</div>
+										<div class="col-xs-6 col-sm-6 col-md-6">
+											<div class="form-group">
+												<label for="Suite">Suite</label>
+												<input type="text" name="Suite" id="Suite" class="form-control input-sm" placeholder="Suite">
+										</div>
+									</div>
+							</div>
+								
+								
+			    				
+							
+							
+							
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password">
+			    					</div>
+			    				</div>
+			    			</div>
+			    			
+			    			<input type="submit" value="Confirmar" class="btn btn-info btn-block">
+			    		
+			    		</form>
+			    	</div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
+	
+	
+	
+	
+	
+	
+	
+	<!-- -->
+	
+	
+</body>
+</html>
